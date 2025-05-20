@@ -1,0 +1,30 @@
+import { playDisplay } from '@/components/fonts'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import Image from 'next/image'
+
+import React from 'react'
+import {motion} from 'motion/react'
+
+export default function Banner({img}: {img: string | StaticImport}) {
+  return (
+     <motion.div initial={{opacity: 0, y: "-100%"}} animate={{opacity: 1, y: 1}} transition={{duration: 1}} className="w-full   min-h-screen "
+
+                    >
+                        <Image src={img} alt='vsdv' className='h-full w-full' fill />
+                        <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/30">
+                            <motion.div initial={{opacity: 0, y: 50, x: 50}} whileInView={{opacity: 1, y: 0, x: 0}} transition={{duration: 0.5, delay: 0.5}} className="container mx-auto px-6  w-full">
+                         <h1 className={`${playDisplay.className} text-xl   text-white`}>Exporter & Importer</h1>
+                                <h1 className={`text-2xl  pt-0 font-semibold mt-10 mb-12  text-white    lg:text-6xl ${playDisplay.className}`}>
+                                  
+                      Professional Yarn Manufacturer
+
+
+
+                                </h1>
+                            <button className={`py-3 text-xl font-medium  px-10 bg-red-600 cursor-pointer text-white hover:text-red-600 border border-transparent hover:border-red-600 hover:bg-white transition-colors duration-500 ${playDisplay.className}`}>Read More</button>
+                             
+                            </motion.div>
+                        </div>
+                    </motion.div>
+  )
+}
