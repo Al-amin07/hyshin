@@ -17,6 +17,7 @@ const products = [
         name: "Classic Snapback",
         image: img1,
         description: "Timeless style, perfect fit.",
+        
     },
     {
         id: 2,
@@ -61,29 +62,43 @@ import {
     HashNavigation,
     Autoplay,
 } from "swiper/modules";
-// import { menuItems } from "./populrFoods";
-import { FaChevronLeft } from "react-icons/fa6";
-import { FaChevronRight } from "react-icons/fa6";
+
+import Link from 'next/link'
+import { MdArrowRightAlt } from 'react-icons/md'
+// import { FaChevronRight } from "react-icons/fa6";
 
 
 export default function ProductSection() {
     return (
         <section className="">
-            <div className="max-w-7xl min-h-[600px] relative mx-auto px-4 sm:px-6 lg:px-8">
+            <div className=" min-h-[600px] relative mx-auto ">
                 <div className="flex items-start 
                 ">
 
                     {/* Vertical Text on the Left */}
-                    <div className="hidden   h-[500px] lg:flex min-w-[350px] justify-center items-center">
-                        <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 text-3xl mr-5'>we make it all</span>
-                        <h2
-                            className={`text-5xl  rotate-180 font-bold text-black  `}
+                    <div className="hidden  min-h-full py-16 lg:flex flex-col gap-5 min-w-[400px] justify-center items-center">
+                        
+                        <div className='flex gap-1'>
+                            <h2
+                            className={`text-5xl  rotate-180 font-bold text-black/80  `}
                             style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}
                         >
 
 
                             Product Category
                         </h2>
+                        <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 h-28 w-5 bg-blue-600'></span>
+                        </div>
+                        <div className='max-w-[300px]  space-x-3 mx-auto'>
+                            <Link className='hover:underline text-lg hover:text-blue-600'  href={`/product`}>
+                        All
+                            </Link> 
+                            {
+                            products.map(el => <Link key={el.id} className='hover:underline text-lg hover:text-blue-600' href={`/product/${el.id}`}>
+                            {el.name}
+                            </Link>)
+                            }
+                        </div>
                     </div>
 
                     {/* Swiper Carousel */}
@@ -135,26 +150,26 @@ export default function ProductSection() {
                                       
 
                                         <h3 className="text-2xl mb-4 text-center whitespace-nowrap font-semibold ">{el?.name}</h3>
-                                         <button className=" mx-auto cursor-pointer p-2 h-10 w-10 opacity-0 group-hover:opacity-100
-                                         flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-all duration-300 font-bold shadow-xl">
-                                                            <FaChevronLeft size={18} />
+                                         <button className=" mx-auto cursor-pointer p-2 border border-white   rounded-full opacity-0 group-hover:opacity-100
+                                         flex items-center justify-center bg-transparent text-white transition-all duration-300 font-bold shadow-xl">
+                                                      <MdArrowRightAlt size={26} />
                                                         </button>
                                     </div>
-                                    <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-600 to-transparent"></div>
+                                    <div className="absolute group-hover:opacity-0 transition-all duration-500 opacity-100 bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-600 to-transparent"></div>
                                     </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
 
                         {/* Navigation Buttons */}
-                        <div className="absolute lg:-top-16  lg:mt-0 z-10 lg:-right-6 right-1/2 -translate-x-1/2 flex gap-3">
+                        {/* <div className="absolute lg:-top-16  lg:mt-0 z-10 lg:-right-6 right-1/2 -translate-x-1/2 flex gap-3">
                             <button className="custom-prev cursor-pointer p-2 h-10 w-10 flex items-center justify-center bg-white rounded-full border border-black/45 hover:text-white hover:bg-black transition-colors duration-300 font-bold shadow-xl">
                                 <FaChevronLeft size={18} />
                             </button>
                             <button className="custom-next cursor-pointer p-2 h-10 w-10 flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-colors border border-black/45 duration-300 font-bold shadow-xl">
                                 <FaChevronRight size={18} />
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

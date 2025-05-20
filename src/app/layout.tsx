@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import { playDisplay } from "@/components/fonts";
+import AnimationProvider from "@/Provider/AnimationProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,10 +27,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${playDisplay.className} antialiased`}
       >
-        <Navbar />
+        <AnimationProvider>
+          <Navbar />
         <div className='dark:bg-white dark:text-black min-h-screen mb-24 px-5 md:px-0  mx-auto '>
           {children}
         </div>
+        </AnimationProvider>
 
       </body>
     </html>
