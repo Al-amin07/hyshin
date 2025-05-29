@@ -29,13 +29,11 @@ export default function Header() {
     return (
         <div className='md:h-screen relative'>
             <Swiper
-                
+
                 speed={1200}
 
-                scrollbar={{
-                    el: '.custom-swiper-scrollbar',
-                    draggable: true,
-                }}
+
+
                 loop={true}
                 autoplay={{
                     delay: 6000,
@@ -53,20 +51,20 @@ export default function Header() {
 
                 <SwiperSlide>
 
-                  <Banner img={img1}/>
+                    <Banner img={img1} />
 
                 </SwiperSlide>
                 <SwiperSlide>
 
-                  <Banner img={img2}/>
+                    <Banner img={img2} />
 
                 </SwiperSlide>
                 <SwiperSlide>
 
-                  <Banner img={img3}/>
+                    <Banner img={img3} />
 
                 </SwiperSlide>
-            
+
             </Swiper>
             <div className="h-16 flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
                 {/* Swiper will inject the scrollbar drag element here */}
