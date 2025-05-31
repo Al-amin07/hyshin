@@ -4,7 +4,7 @@ import Image from "next/image";
 import bg1 from '@/assets/about/t1.jpeg'
 export default function AboutUs() {
     return (
-        <section className="my-28  font-sans space-y-20">
+        <section className="my-24  font-sans space-y-20">
             {/* Block 0 */}
             <div
                 className="relative h-[80vh] flex items-center bg-no-repeat bg-center bg-fixed bg-cover "
@@ -12,8 +12,8 @@ export default function AboutUs() {
             >
 
                 <div className="absolute inset-0 bg-black/40 " />
-                <div className="relative  z-10 px-6 md:px-12 max-w-5xl text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+                <div className="relative  z-10 px-6 md:px-12 lg:px-16 max-w-5xl text-white">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">About Us</h1>
                     <div className="w-16 h-[2px] bg-white mb-6" />
                     <p className="text-xl md:text-2xl font-light mb-2">
                         Coming From China, Marketing To The World.
@@ -38,7 +38,7 @@ export default function AboutUs() {
                         />
                     </div>
                     <div>
-                        <h3 className="font-bold text-2xl text-gray-800 mb-3">FOUNDED IN 2012</h3>
+                        <h3 className="font-bold text-lg md:text-2xl text-gray-800 mb-3">FOUNDED IN 2012</h3>
                         <h2 className="text-xl md:text-3xl font-semibold text-blue-600 mb-5">
                             Coming From China, Marketing To The World.
                         </h2>
@@ -62,7 +62,7 @@ export default function AboutUs() {
                 <div className="grid md:grid-cols-2 gap-10 items-center">
 
                     <div className=" ">
-                        <h3 className="font-bold text-2xl text-gray-800 mb-2 uppercase">Outstanding Quality</h3>
+                        <h3 className="font-bold text-lg md:text-2xl text-gray-800 mb-2 uppercase">Outstanding Quality</h3>
                         <h2 className="text-xl md:text-3xl font-semibold text-blue-600 mb-4">
                             Hongshun Was First Established In 2012
                         </h2>

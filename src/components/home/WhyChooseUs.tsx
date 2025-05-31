@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
       <div className="flex flex-col lg:flex-row">
         {/* Left Image Section */}
         <div className="lg:w-1/2 relative">
-          <div className="h-64 lg:h-full bg-gray-800 relative overflow-hidden">
+          <div className="h-80 lg:h-full bg-gray-800 relative overflow-hidden">
             {/* Manufacturing machinery background with overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
             <div className="absolute inset-0 opacity-30">
@@ -89,7 +89,7 @@ export default function WhyChooseUs() {
 
 
         {/* Right Content Section */}
-        <div className="lg:w-1/2  p-8 lg:p-12">
+        <div className="lg:w-1/2 px-4 mt-6 lg:p-12">
           <div className="mb-6">
             <p className="text-xl text-gray-700 uppercase tracking-wide mb-2">
               PREMIUM QUALITY SINCE 2012

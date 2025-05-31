@@ -37,31 +37,31 @@ export const threads: IThread[] = [
     id: 5,
     title: "Acrylic Yarn",
     desc: "Synthetic yarn that mimics wool, used in sweaters, blankets, and other warm fabrics.",
-    image:img2,
+    image: img2,
     createdDate: "2025-05-15T17:00:00Z"
   }
 ];
 
 export default function HotNews() {
   return (
-    <div className='px-12'>
-        
-      
-        <div className="flex max-w-xl mb-16">
-          <div className="w-6 h-auto bg-blue-600 mr-5"></div>
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-7">Hot News</h2>
-            <p className=" text-base md:text-lg">
-              Provide you with the latest enterprise and industry news.
+    <div className='px-5 md:px-8 lg:px-12'>
 
-            </p>
-          </div>
+
+      <div className="flex max-w-xl mb-16">
+        <div className="w-6 h-auto bg-blue-600 mr-5"></div>
+        <div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-7">Hot News</h2>
+          <p className=" text-base md:text-lg">
+            Provide you with the latest enterprise and industry news.
+
+          </p>
         </div>
-        <div className='grid grid-cols-3 gap-16 '>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 '>
         {
-            threads.slice(0,3).map((el, index) => <ThreadCard index={index} thread={el} key={el.id}/>)
+          threads.slice(0, 3).map((el, index) => <ThreadCard index={index} thread={el} key={el.id} />)
         }
-        </div>
+      </div>
     </div>
   )
 }

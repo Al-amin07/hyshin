@@ -1,8 +1,9 @@
 "use client";
 import TextWithBorder from "@/components/TextWithBorder";
+import Image from "next/image";
 import { toast } from "sonner";
 
-
+import img from '@/assets/contact-2x-635x624.jpg'
 
 export default function Contact() {
     const addressData = [
@@ -71,14 +72,17 @@ export default function Contact() {
     return (
         <div className="font-sans mt-24">
             {/* Header Section */}
-            {/* <section className="flex flex-col md:flex-row items-center justify-between bg-white">
-                <div className="bg-[#0A2540] text-white px-6 py-10 w-full md:w-1/2 text-center md:text-left">
-                    <h2 className="text-2xl font-bold">Contact</h2>
+            <section className="flex max-w-6xl mx-auto flex-col md:flex-row items-center justify-between bg-white">
+                <div className="bg-[#0A2540] md:min-h-[300px] text-white px-6 py-10 w-full md:w-1/2 text-center md:text-left">
+                    <div className=' mb-6'>
+                        <span className='w-20 h-[1px] bg-white block mb-1'></span>
+                        <h1 className='text-3xl md:text-4xl font-medium text-left'>Contact</h1>
+                    </div>
                 </div>
-                <div className="w-full md:w-1/2 h-64 relative">
-                    <Image src="/building.jpg" alt="Office" fill className="object-cover" />
+                <div className="w-full md:w-1/2 min-h-[350px] md:min-h-[500px] relative">
+                    <Image src={img} alt="Office" fill className="object-cover" />
                 </div>
-            </section> */}
+            </section>
 
 
             <section className="max-w-5xl mb-8 mx-auto ">
