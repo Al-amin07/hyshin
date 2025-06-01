@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
-import { playDisplay } from "@/components/fonts";
+// import { playDisplay } from "@/components/fonts";
 import AnimationProvider from "@/Provider/AnimationProvider";
 import Footer from "@/components/shared/Footer";
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${playDisplay.className} antialiased`}
+        className={`${geistSans.variable}  antialiased`}
       >
         <AnimationProvider>
           <Navbar />

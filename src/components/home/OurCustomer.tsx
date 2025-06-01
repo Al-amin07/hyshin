@@ -72,13 +72,13 @@ export default function OurCustomer() {
                 className="mySwiper min-h-[200px]"
             >
                 {customerLogos.map((logo, index) => (
-                    <SwiperSlide key={index} className="flex items-center justify-center">
+                    <SwiperSlide key={index} className="flex ">
                         <Image
                             src={logo}
                             alt={`Customer Logo ${index + 1}`}
                             width={150}
                             height={150}
-                            className="object-contain"
+                            className="object-contain mx-auto "
                         />
                     </SwiperSlide>
                 ))}

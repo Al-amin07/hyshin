@@ -2,6 +2,8 @@ import ab1 from '@/assets/about/ab-01.jpg'
 import ab2 from '@/assets/about/ab-02.jpg'
 import Image from "next/image";
 import bg1 from '@/assets/about/t1.jpeg'
+import CertificationSection from '@/components/home/Certificate';
+import IndustriesWeServe from '@/components/home/IndustriesWeServe';
 export default function AboutUs() {
     return (
         <section className="my-24  font-sans space-y-20">
@@ -86,7 +88,8 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-
+            <CertificationSection />
+            <IndustriesWeServe />
         </section>
     );
 }

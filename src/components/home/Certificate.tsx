@@ -48,7 +48,7 @@ const CertificationSection = () => {
             </div>
 
             {/* Logos Section */}
-            <div className=" py-12 px-2">
+            <div className=" py-12 px-8">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
                     {certifications.map((cert, index) => (
                         <div

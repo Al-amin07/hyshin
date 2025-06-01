@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Button } from "../ui/button";
+
 // components/OurProcess.tsx
 export default function OurProcess() {
     const steps = [
@@ -33,7 +36,7 @@ export default function OurProcess() {
                     We ensure every step is optimized for quality, sustainability, and customer satisfaction.
                 </p>
 
-                <div className="relative flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 md:space-x-4">
+                <div className="relative flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 md:space-x-4 mb-8">
                     {steps.map((step, index) => (
                         <div key={index} className="flex flex-col items-center text-center max-w-xs">
                             <div className="w-16 h-16 flex items-center justify-center bg-blue-600 text-white rounded-full text-xl font-bold shadow-lg">
@@ -44,8 +47,13 @@ export default function OurProcess() {
                         </div>
                     ))}
 
-                    {/* Horizontal Line Connector */}
-                    {/* <div className="hidden md:block absolute top-8 left-0 right-0 h-1 bg-blue-100 z-0" /> */}
+
+                </div>
+                <div className="flex items-center justify-center">
+                    <Link href="/process" className='' >
+                        <Button className='hover:bg-black text-white transition-all duration-300 hover:text-white bg-blue-600 rounded-none cursor-pointer' variant={'outline'}>Learn More</Button>
+
+                    </Link>
                 </div>
             </div>
         </section>
