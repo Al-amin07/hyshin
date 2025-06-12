@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import img from '@/assets/about/l1.jpg'
+import Link from 'next/link';
 
 export default function ProfessionalSection() {
   const lists = [
@@ -28,30 +29,18 @@ export default function ProfessionalSection() {
             Professional yarn manufacturer
           </h2>
           <p className="text-gray-700 text-lg mb-6">
-            Hengke Textile Technology Co., Ltd. is a China Polyester yarn and ACY yarn Factory,
-            Nylon yarn Manufacturers. We are headquartered in Zhejiang, the company was founded
-            by the enterprising Mr. Wang, the main goal is to become a major brand in the field
-            of indelination and export. Focus on project commitment, speed of work, and quality
-            practices.
+            Hun Hsin Textile is a trusted supplier and exporter of high-quality yarns, specializing in 100% Nylon Yarn, Recycled Nylon Yarn, and China Feather Yarn. Headquartered in Dhaka, we are committed to delivering exceptional quality, timely service, and innovative solutions. Founded with the goal of becoming a leading brand in the nylon yarn industry, we focuses on project commitment and customer satisfaction worldwide.
           </p>
 
           <div className='flex justify-between items-center'>
             {/* Read More Button */}
-            <button className="border-2 border-black px-4 md:px-5 lg:px-7 text-xl py-2 md:py-2.5 lg:py-3.5  font-medium hover:bg-black hover:text-white transition">
-              Read More
-            </button>
+            <Link href="/about" className='' >
+              <button className="border-2 border-black px-4 md:px-5 lg:px-7 text-xl py-2 md:py-2.5 cursor-pointer  font-medium hover:bg-black hover:text-white transition">
+                Read More
+              </button>
+            </Link>
 
-            {/* About Us Label */}
-            <div className='flex items-end gap-2'>
-              <div className="mt-10 text-right">
-                <p className="text-5xl font-bold text-blue-600 relative inline-block">
-                  About
-                  <span className="block text-black mt-1">Us</span>
 
-                </p>
-              </div>
-              <p className='h-20 w-5 bg-blue-600'></p>
-            </div>
           </div>
         </div >
       </div>

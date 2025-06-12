@@ -52,13 +52,14 @@ export default function Header() {
 
                 <SwiperSlide>
 
-                    <Banner text='Weaving World-Class Nylon Yarn, Every Strand.
+                    <Banner text='Weaving Excellence in Every Strand
+
 ' img={img1} />
 
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <Banner text='Bangladesh’s #1 Exporter of Premium Nylon Yarn' img={img2} />
+                    <Banner text="Bangladesh's Leading Nylon Yarn Exporter" img={img2} />
 
                 </SwiperSlide>
                 {/* <SwiperSlide>

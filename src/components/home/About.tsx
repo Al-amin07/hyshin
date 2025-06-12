@@ -13,7 +13,7 @@ export default function AboutSection() {
                 <div className="md:w-1/2" data-aos="fade-left">
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">About Us</h2>
                     <p className="text-gray-600 leading-relaxed mb-5">
-                        With decades of experience in textile manufacturing, we specialize in producing sustainable and stylish fabrics. Our commitment to quality, innovation, and customer satisfaction sets us apart in the industry.
+                        With decades of experience, Hun Hsin Textile is a leading supplier and exporter of high-quality nylon yarn. We pride ourselves on reliability, innovation, and excellent customer service in the Retail Apparel and Fashion industry.
                     </p>
                     <Link href="/about" className='' >
                         <Button className='hover:bg-black hover:text-white transition-all duration-300 rounded-none cursor-pointer' variant={'outline'}>Learn More</Button>

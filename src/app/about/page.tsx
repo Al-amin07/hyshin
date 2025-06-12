@@ -40,23 +40,14 @@ export default function AboutUs() {
                         />
                     </div>
                     <div>
-                        <h3 className="font-bold text-lg md:text-2xl text-gray-800 mb-3">FOUNDED IN 2012</h3>
-                        <h2 className="text-xl md:text-3xl font-semibold text-blue-600 mb-5">
+                        <h3 className="font-bold text-lg md:text-2xl text-gray-800 mb-3">FOUNDED IN 2008</h3>
+                        <h2 className="text-xl md:text-3xl font-semibold text-[#172E4D] mb-5">
                             Coming From China, Marketing To The World.
                         </h2>
                         <p className="text-gray-800  leading-relaxed">
-                            HUN HSIN TEXTILE Fiber Technology Co., Ltd. is an enterprise
-                            established in June 2012, especially good at producing polyamide filament
-                            yarn (FDY, DTY, MOTHER YARN, MONOFILAMENT YARN). Our fixed assets:
-                            USD15000000, covers an area of 105228 square meters, 31000 square meters
-                            of plant. We have more than 300 employees and over 50 professional
-                            technicians with our Parent Company – “Nantong Jingshan Polyamide Fiber Co., Ltd.”.
+                            Since its establishment in 2008, Hun Hsin Textile Co., (BD) Ltd. has emerged as one of Bangladesh’s premier exporters of nylon yarn. With over 400 dedicated employees. Our deep industry expertise and commitment to excellence have earned us a strong reputation among textile & apparel manufacturers worldwide. We pride ourselves on delivering consistent product quality, reliable supply chains, and exceptional customer service, making us a preferred partner for businesses seeking premium nylon yarn solutions.
                             <br /><br />
-                            Our products are widely applied in textile enterprises like circular knitting
-                            machines, rapier looms and hydraulic looms. Applications include knitting
-                            underwear, elastic leotards, socks, bath products, swimming wear, cleaning
-                            products, filter cloths, curtain cloths, window screens with a parachute,
-                            gauze kerchiefs, mosquito net laces, ribbons and garments textiles.
+                            Driven by innovation and sustainability, Hun Hsin Textile is dedicated to supporting the growth of the readymade garments (RMG) industry by providing yarns that combine strength, durability, and eco-conscious production methods. Our extensive network and market knowledge enable us to efficiently serve clients across multiple continents, ensuring timely delivery and customized solutions.
                         </p>
                     </div>
                 </div>
@@ -65,16 +56,13 @@ export default function AboutUs() {
 
                     <div className=" ">
                         <h3 className="font-bold text-lg md:text-2xl text-gray-800 mb-2 uppercase">Outstanding Quality</h3>
-                        <h2 className="text-xl md:text-3xl font-semibold text-blue-600 mb-4">
-                            Hongshun Was First Established In 2012
+                        <h2 className="text-xl md:text-3xl font-semibold text-[#172E4D] mb-4">
+                            HUN HSIN  Was First Established In 2008
                         </h2>
                         <p className="text-gray-800  leading-relaxed">
-                            During the past 10 years since our parent company was established in September
-                            of 2006, we always regarded innovation as our core competitiveness and developed
-                            new products to meet the requirements of markets every year.
+                            Founded in 2008, Hun Hsin Textile has built its reputation on innovation and trust within the nylon yarn industry. Over the years, we have continuously developed high-quality products such as 100% Nylon Yarn, Recycled Nylon Yarn, and China Feather Yarn to meet the evolving needs of our global customers.
                             <br /><br />
-                            We always insist on “cooperate in good faith and create a win-win situation” as
-                            our business philosophy, and we sincerely welcome clients visiting from home and abroad.
+                            Guided by the principle of “building partnerships with integrity and creating mutual success,” we prioritize honest collaboration and long-term relationships. We warmly welcome clients from around the world to connect and grow together.
                         </p>
                     </div>
                     <div>

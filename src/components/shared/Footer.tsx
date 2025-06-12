@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
     const navLinks = [
@@ -12,7 +12,7 @@ export default function Footer() {
         { href: "/contact", label: "CONTACT" },
     ];
     return (
-        <footer className="bg-black text-white py-8 md:py-12 lg:py-20 px-8 md:px-10 lg:px-16">
+        <footer className="bg-black/90 text-white py-8 md:py-12 lg:py-20 px-8 md:px-10 lg:px-16">
             <div className='flex flex-col lg:flex-row justify-between border-b border-gray-700  mb-8'>
                 <div className='w-full lg:w-2/3 mx-auto pb-10'>
                     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-5  ">
@@ -60,8 +60,8 @@ export default function Footer() {
                     <div className="mt-4 flex items-center lg:justify-end gap-4 text-white pr-6">
                         <span className="font-bold text-2xl">Follow Us : </span>
                         <FaFacebookF className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
-                        <FaTwitter className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
-                        <FaInstagram className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
+                        {/* <FaTwitter className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
+                        <FaInstagram className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' /> */}
                         <FaLinkedinIn className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
                     </div>
                 </div>
@@ -105,9 +105,12 @@ export default function Footer() {
 
 
             {/* Bottom Bar */}
-            <div className="mt-6 text-center text-sm md:text-base text-white">
-                <p>Copyright © by Jiangsu Hongshun Synthetic Fiber Technology Co., Ltd. Rights Reserved.</p>
-                <p>Technical Support : <span className="text-white">Smart Cloud</span></p>
+            <div className="mt-6  text-sm md:text-base text-white">
+                <p>Hun Hsin Textile Co., (BD) Ltd.
+                </p>
+                <p>Leading Exporter of Premium Nylon Yarns
+                </p>
+                <p>© 2008 – 2025 Hun Hsin Textile Co., (BD) Ltd. All rights reserved.</p>
             </div>
         </footer>
     );
