@@ -17,7 +17,7 @@ import {
 } from 'swiper/modules';
 import img2 from '@/assets/banner/yarn images, for banner (2).jpg'
 import img1 from '@/assets/banner/yarn images, for banner (3).jpg'
-import img3 from '@/assets/banner/b7.jpeg'
+// import img3 from '@/assets/banner/b7.jpeg'
 // import img2 from '@/assets/banner/banner5.jpg'
 // import img1 from '@/assets/banner/b5.jpg'
 // import img3 from '@/assets/banner/b7.jpeg'
@@ -52,19 +52,20 @@ export default function Header() {
 
                 <SwiperSlide>
 
-                    <Banner img={img1} />
+                    <Banner text='Weaving World-Class Nylon Yarn, Every Strand.
+' img={img1} />
 
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <Banner img={img2} />
+                    <Banner text='Bangladesh’s #1 Exporter of Premium Nylon Yarn' img={img2} />
 
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
 
                     <Banner img={img3} />
 
-                </SwiperSlide>
+                </SwiperSlide> */}
 
             </Swiper>
             <div className="h-12  hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
