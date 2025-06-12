@@ -8,8 +8,8 @@ import Image from 'next/image'
 export default function OurProcessPage() {
     return (
         <section className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 py-20">
-                <h2 className="text-4xl font-bold text-gray-900 text-center">Our Textile Manufacturing Process</h2>
+            <div className="max-w-7xl mx-auto px-6 py-28">
+                <h2 className="text-4xl font-bold text-gray-700 text-center">Our Textile Manufacturing Process</h2>
                 <p className="mt-4 text-lg text-gray-600 text-center">
                     Crafting quality textiles through precision, care, and innovation.
                 </p>
@@ -20,9 +20,10 @@ export default function OurProcessPage() {
                 <div className=" px-6">
                     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
                         <div className="lg:w-1/2">
-                            <h3 className="text-3xl font-semibold text-gray-800">1. Raw Material Sourcing</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800">RAW MATERIAL SOURCING – STARTING WITH PURITY & PURPOSE
+                            </h3>
                             <p className="mt-4 text-gray-600 leading-relaxed">
-                                We begin with selecting the finest natural and synthetic fibers from trusted suppliers. Quality starts with the raw material — ensuring durability, softness, and sustainability from the ground up.
+                                At Hun Hsin Textile Co., (BD) Ltd., the quality of our nylon yarn begins with selecting the finest raw materials primarily high-purity caprolactam sourced from globally trusted, eco-compliant suppliers. This ensures a clean, consistent base polymer, setting the tone for exceptional yarn strength, softness, and sustainability. Every batch is tested for purity and performance before entering production
                             </p>
                         </div>
                         <div className="lg:w-1/2" data-aos="zoom-in">
@@ -35,9 +36,10 @@ export default function OurProcessPage() {
                 <div className=" px-6">
                     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12">
                         <div className="lg:w-1/2">
-                            <h3 className="text-3xl font-semibold text-gray-800">2. Spinning & Yarn Production</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800">POLYMERIZATION & MELT SPINNING – ENGINEERING CONTINUOUS EXCELLENCE
+                            </h3>
                             <p className="mt-4 text-gray-600 leading-relaxed">
-                                Our modern spinning systems transform fibers into yarn with high strength and evenness. We ensure every thread meets exact specifications for seamless downstream processing.
+                                Our in-house polymerization process transforms caprolactam into nylon polymer chips under tightly controlled thermal conditions. These chips are then melted and extruded through precision-engineered spinnerets, forming continuous filaments. Using world-class melt spinning technology, we achieve yarns with exact denier control, smooth texture, and superior tensile strength ideal for both fashion and industrial textile applications.
                             </p>
                         </div>
                         <div className="lg:w-1/2" data-aos="zoom-in" data-aos-duration="1200">
@@ -50,9 +52,10 @@ export default function OurProcessPage() {
                 <div className=" px-6">
                     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
                         <div className="lg:w-1/2">
-                            <h3 className="text-3xl font-semibold text-gray-800">3. Fabric Weaving or Knitting</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800">DRAWING & TEXTURIZING – CUSTOMIZING YARN FOR REAL-WORLD DEMANDS
+                            </h3>
                             <p className="mt-4 text-gray-600 leading-relaxed">
-                                Depending on the fabric type, we use high-speed looms for weaving or precision machines for knitting. This stage defines the texture, strength, and breathability of the fabric.
+                                To meet diverse market needs, our yarns undergo advanced drawing and texturizing treatments. This process enhances properties like elasticity, bulk, and softness; perfect for high-performance applications such as sportswear, lingerie, outerwear, or technical textiles. Whether you need air-covered, false-twist textured, or other specialty yarns, we offer flexibility through OEM/ODM customization.
                             </p>
                         </div>
                         <div className="lg:w-1/2" data-aos="zoom-in" data-aos-duration="1200">
@@ -65,9 +68,10 @@ export default function OurProcessPage() {
                 <div className=" px-6">
                     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12">
                         <div className="lg:w-1/2">
-                            <h3 className="text-3xl font-semibold text-gray-800">4. Dyeing & Finishing</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800">HEAT SETTING & FUNCTIONAL FINISHING – LOCKING IN RELIABILITY
+                            </h3>
                             <p className="mt-4 text-gray-600 leading-relaxed">
-                                Fabrics are dyed in vibrant, lasting colors using eco-friendly methods. Finishing processes like softening, anti-shrink, or water-repellency enhance the usability and feel of the fabric.
+                                Each yarn is heat-set using controlled thermal processes to stabilize its structure and improve handling, shrink resistance, and dye affinity. We also offer functional finishing options; including soft-touch, anti-pilling, moisture management, or anti-static treatments; delivered with precision for client-specific applications. Our eco-friendly processes comply with global textile safety and performance standards.
                             </p>
                         </div>
                         <div className="lg:w-1/2" data-aos="zoom-in" data-aos-duration="1200">
@@ -79,9 +83,10 @@ export default function OurProcessPage() {
                 <div className=" px-6">
                     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
                         <div className="lg:w-1/2">
-                            <h3 className="text-3xl font-semibold text-gray-800">5. Quality Inspection & Packaging</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800">QUALITY ASSURANCE & PACKAGING – DELIVERING CONFIDENCE IN EVERY CONE
+                            </h3>
                             <p className="mt-4 text-gray-600 leading-relaxed">
-                                Every roll of fabric is thoroughly inspected for defects and inconsistencies. Once approved, it&apos;s neatly packaged and prepped for delivery to ensure it reaches you in perfect condition.
+                                Before shipment, every cone of yarn undergoes a comprehensive inspection process. Automated systems and trained quality inspectors evaluate for evenness, strength, twist accuracy, and dyeability. Once approved, yarns are professionally wound, labeled, and packaged to ensure they arrive in pristine condition; ready for seamless use in your production lines, wherever you are in the world
                             </p>
                         </div>
                         <div className="lg:w-1/2" data-aos="zoom-in" data-aos-duration="1200">

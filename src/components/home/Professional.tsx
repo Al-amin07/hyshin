@@ -9,10 +9,10 @@ export default function ProfessionalSection() {
     { text: 'Annual number of export containers', number: 300000 },
   ]
   return (
-    <section className="w-full relative bg-white py-10">
+    <section className="container mx-auto relative bg-white py-10">
       <div className="container relative mx-auto flex flex-col lg:flex-row  gap-10 px-4">
         {/* Left image */}
-        <div data-aos="fade-right" className="lg:w-1/2 w-full">
+        <div data-aos="zoom-in" className="lg:w-1/2 w-full">
           <Image
             src={img}
             alt="Company Building"
@@ -23,7 +23,7 @@ export default function ProfessionalSection() {
         </div>
 
         {/* Right content */}
-        <div data-aos="fade-left" className="lg:w-1/2 w-full">
+        <div data-aos="zoom-in" className="lg:w-1/2 w-full">
           <h2 className="text-3xl lg:text-6xl leading-normal font-bold mb-4">
             Professional yarn manufacturer
           </h2>

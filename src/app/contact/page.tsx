@@ -1,45 +1,62 @@
 "use client";
 import TextWithBorder from "@/components/TextWithBorder";
+import Image from "next/image";
 // import Image from "next/image";
 import { toast } from "sonner";
 
-// import img from '@/assets/contact-2x-635x624.jpg'
+import img from '@/assets/contact-2x-635x624.jpg'
+import { motion } from 'motion/react'
+import FaqSection from "@/components/Faq";
 
+const details = [
+    {
+        title: 'Bangladesh Factory: ',
+        desc: 'Plot No.72-74, Cumilla Export Processing Zone,  Cumilla-3500, Bangladesh.'
+    },
+    {
+        title: 'Taiwan Factory: ',
+        desc: ' RD No. 07, Hsin Kung Road, Tien Chung City, Chunghua Country, Changhua, Taiwan (ROC).'
+    },
+    {
+        title: 'Corporate Office:',
+        desc: 'House No. 04, Road No. 12, Sector 04, Uttara Model Town, Dhaka, Bangladesh. '
+    },
+]
 export default function Contact() {
-    const addressData = [
-        {
-            title: "Head Office",
-            lines: [
-                "60/6B, 60 Green Rd, Panthapath,",
-                "Dhaka-1205, Bangladesh",
-                "Phone: +880 1712345678",
-            ],
-        },
-        {
-            title: "Corporate Office",
-            lines: [
-                "House # 78, Road # 11, Block # F, Banani, ",
-                "Dhaka – 1213, Bangladesh",
-                "Phone: +880 1712345678",
-            ],
-        },
-        {
-            title: "Factory Address 01",
-            lines: [
-                "KuniaTargach, Hotapara, Gazipur",
-                "Bangladesh",
-                "Phone: +880 1712345678",
-                "Phone: +880 1712345678",
-            ],
-        },
-        {
-            title: "Factory Address 02",
-            lines: [
-                "Jamirdia, Masterbari, Valuka, ",
-                "Mymensingh, Bangladesh",
-            ],
-        },
-    ];
+    // const addressData = [
+    //     {
+    //         title: "Head Office",
+    //         lines: [
+    //             "60/6B, 60 Green Rd, Panthapath,",
+    //             "Dhaka-1205, Bangladesh",
+    //             "Phone: +880 1712345678",
+    //         ],
+    //     },
+    //     {
+    //         title: "Corporate Office",
+    //         lines: [
+    //             "House # 78, Road # 11, Block # F, Banani, ",
+    //             "Dhaka – 1213, Bangladesh",
+    //             "Phone: +880 1712345678",
+    //         ],
+    //     },
+    //     {
+    //         title: "Factory Address 01",
+    //         lines: [
+    //             "KuniaTargach, Hotapara, Gazipur",
+    //             "Bangladesh",
+    //             "Phone: +880 1712345678",
+    //             "Phone: +880 1712345678",
+    //         ],
+    //     },
+    //     {
+    //         title: "Factory Address 02",
+    //         lines: [
+    //             "Jamirdia, Masterbari, Valuka, ",
+    //             "Mymensingh, Bangladesh",
+    //         ],
+    //     },
+    // ];
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const toastId = toast.loading("Submitting your message...");
@@ -72,21 +89,25 @@ export default function Contact() {
     return (
         <div className="font-sans mt-24">
             {/* Header Section */}
-            {/* <section className="flex max-w-6xl mx-auto flex-col md:flex-row items-center justify-between bg-white">
-                <div className="bg-[#0A2540] md:min-h-[300px] text-white px-6 py-10 w-full md:w-1/2 text-center md:text-left">
-                    <div className=' mb-6'>
-                        <span className='w-20 h-[1px] bg-white block mb-1'></span>
-                        <h1 className='text-3xl md:text-4xl font-medium text-left'>Contact</h1>
+            <section className="flex flex-col md:flex-row items-center justify-between bg-[#F0F0F0] py-20 px-28">
+                <div className=" min-w-lg relative">
+                    <div className="bg-[#0A2540]  absolute -right-40 z-10 top-1/2 -translate-y-1/2 opacity-90  md:min-h-[350px] text-white p-12 w-full md:w-1/2 text-center md:text-left min-w-xl">
+
+                        <div className='  mb-6'>
+                            <span className='w-20 h-[1px] bg-white block mb-1'></span>
+                            <h1 className='text-3xl md:text-5xl font-medium text-left'>Contact</h1>
+                        </div>
+
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 min-h-[350px] md:min-h-[500px] relative">
                     <Image src={img} alt="Office" fill className="object-cover" />
                 </div>
-            </section> */}
+            </section>
 
 
-            <section className="max-w-5xl mb-8 mx-auto ">
-                <section className="max-w-3xl   grid grid-cols-1 sm:grid-cols-2 gap-8 py-10 text-sm text-gray-700">
+            <section className="max-w-5xl my-16  md:my-24 mx-auto ">
+                {/* <section className="max-w-3xl   grid grid-cols-1 sm:grid-cols-2 gap-8 py-10 text-sm text-gray-700">
                     {addressData.map((address, index) => (
                         <div key={index}>
                             <TextWithBorder text={address.title} />
@@ -97,11 +118,33 @@ export default function Contact() {
                             </div>
                         </div>
                     ))}
+                </section> */}
+                {/* Service Cards */}
+                <section className=" max-w-7xl mx-auto">
+                    <h2 className="text-xl md:text-3xl uppercase  mb-6">Our Location</h2>
+
+                    {/* Service Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        {
+                            details.map((el, ind: number) => <motion.div initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: ind * 0.2 }} key={el.desc} className="bg-gray-100/75 cursor-pointer hover:shadow-xl transition-shadow duration-500 p-6 rounded-lg">
+                                <h3 className="font-semibold text-xl text-gray-800 mb-2">{el.title}</h3>
+                                <p className=" text-gray-600 text-lg leading-relaxed">
+                                    {el.desc}
+                                </p>
+                            </motion.div>)
+                        }
+
+
+                    </div>
+
+
                 </section>
             </section>
 
             {/* Contact Form */}
-            <section className="bg-[#0A2540] text-white px-6 md:px-20 py-12">
+            <section className="bg-[#162B48] text-white px-6 md:px-20 py-12">
                 <div className='max-w-5xl mx-auto'>
 
                     <TextWithBorder text="Get in Touch" />
@@ -150,6 +193,8 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
+            {/* Faq */}
+            <FaqSection />
         </div>
     );
 }

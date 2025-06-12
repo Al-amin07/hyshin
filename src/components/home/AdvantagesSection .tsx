@@ -32,7 +32,7 @@ const advantages = [
 const AdvantagesSection = () => {
   return (
     <div>
-      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-6 grid-cols-1   bg-white">
+      <div className="grid   md:grid-cols-2 lg:grid-cols-4 gap-6 grid-cols-1   bg-white">
         {advantages.map((item, index) => (
           <div
             key={index}

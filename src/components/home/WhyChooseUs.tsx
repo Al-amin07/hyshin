@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Lightbulb, Truck, Settings, Leaf, DollarSign } from 'lucide-react';
+import img from '@/assets/whychoos.webp'
 const features = [
   {
     text: "Stable Product Quality",
@@ -34,58 +35,59 @@ export default function WhyChooseUs() {
   return (
     <div className="min-h-screen font-sans bg-gray-50">
       {/* Main Content Container */}
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col  lg:flex-row">
         {/* Left Image Section */}
-        <div className="lg:w-1/2 relative">
-          <div className="h-80 lg:h-full bg-gray-800 relative overflow-hidden">
-            {/* Manufacturing machinery background with overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
-            <div className="absolute inset-0 opacity-30">
-              {/* Simulated machinery/industrial elements */}
-              <div className="absolute top-8 left-8 w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-              <div className="absolute top-20 left-12 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-300"></div>
-              <div className="absolute top-32 left-6 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-700"></div>
-              <div className="absolute bottom-20 left-10 w-4 h-4 bg-green-400 rounded-full animate-pulse delay-1000"></div>
-              <div className="absolute bottom-32 left-16 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-500"></div>
-
-              {/* Simulated machinery lines */}
-              <div className="absolute top-1/4 left-0 right-0 h-px bg-gray-500 opacity-50"></div>
-              <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-500 opacity-50"></div>
-              <div className="absolute top-3/4 left-0 right-0 h-px bg-gray-500 opacity-50"></div>
-            </div>
+        <div className="lg:w-1/2 flex flex-col lg:flex-row  relative">
+          <div style={{ backgroundImage: `url(${img.src})` }} className={`min-h-screen  lg:h-full flex-1   relative overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed`}>
+            {/* <Image src={img} alt="Hero Image" className="absolute top-0 left-0 w-full h-full object-cover" /> */}
           </div>
           {/* Blue Section */}
-          <div className="lg:w-1/2 h-full absolute top-0 right-0 bg-[#1689CA] text-white p-8 lg:p-12">
-            <div className="h-full flex flex-col justify-center">
-              <h2 className="text-2xl lg:text-3xl font-bold mb-8">
-                OUR STRENGTH<br />
-                ADVANTAGE
-              </h2>
+          <div className="lg:w-1/2 flex-1  flex flex-col justify-between  h-full absolute top-0 right-0 bg-[#1689CA] text-white px-8 lg:px-12 py-20">
+            <div className="h-full flex flex-col justify-between">
+              <div>
+                <h2 className="text-2xl lg:text-3xl leading-loose mb-5">
+                  OUR <br className='hidden lg:block' /> STRENGTH<br className='hidden lg:block' />
+                  ADVANTAGE
+                </h2>
+                <span className='h-0.5 w-16 bg-white block'></span>
+              </div>
 
-              <div className="space-y-6">
+              <div className="space-y-10">
                 <div>
-                  <h3 className="font-semibold text-xl mb-2">STABLE PRODUCT QUALITY</h3>
+                  <h3 className="leading-relaxed text-xl mb-2">STABLE PRODUCT <br className='hidden lg:block' /> QUALITY</h3>
+                  <p className='text-gray-300'>{`////////////////////////////////////////
+
+`}</p>
 
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-xl mb-2">RELIABLE PRODUCT SUPPLY</h3>
+                  <h3 className="leading-relaxed text-xl mb-2">RELIABLE PRODUCT SUPPLY</h3>
+                  <p className='text-gray-300'>{`////////////////////////////////////////
+
+`}</p>
 
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-xl mb-2">CUSTOMIZATION</h3>
+                  <h3 className="leading-relaxed text-xl mb-2">CUSTOMIZATION</h3>
+                  <p className='text-gray-300'>{`////////////////////////////////////////
+
+`}</p>
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-xl mb-2">SUSTAINABLE COMMITMENT</h3>
+                  <h3 className="leading-relaxed text-xl mb-2">SUSTAINABLE COMMITMENT</h3>
+                  <p className='text-gray-300'>{`////////////////////////////////////////
+
+`}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Center Blue Section */}
+
 
 
         {/* Right Content Section */}
@@ -94,7 +96,7 @@ export default function WhyChooseUs() {
             <p className="text-xl text-gray-700 uppercase tracking-wide mb-2">
               PREMIUM QUALITY SINCE 2012
             </p>
-            <h1 className="text-3xl leading-relaxed  lg:text-5xl font-bold text-[#1689CA] mb-8">
+            <h1 className="text-3xl leading-relaxed  lg:text-5xl font-semibold text-[#1689CA] mb-8">
               Why Choose Hongshun As Your Partner?
             </h1>
           </div>
@@ -120,10 +122,10 @@ export default function WhyChooseUs() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 mt-8">
-            <button className="bg-[#1689CA] text-white border border-[#1689CA] hover:bg-transparent cursor-pointer hover:text-[#1689CA] px-6 py-2 rounded transition-colors duration-500">
+            <button className="bg-[#1689CA] text-white border border-[#1689CA] hover:bg-transparent cursor-pointer hover:text-[#1689CA] px-6 py-2  transition-colors duration-500">
               View More →
             </button>
-            <button className="bg-[#1689CA] text-white border border-[#1689CA] hover:bg-transparent cursor-pointer hover:text-[#1689CA] px-6 py-2 rounded transition-colors duration-500">
+            <button className="bg-[#1689CA] text-white border border-[#1689CA] hover:bg-transparent cursor-pointer hover:text-[#1689CA] px-6 py-2  transition-colors duration-500">
               Contact Us →
             </button>
           </div>

@@ -2,7 +2,14 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
+const caps = [
+    {
+        id: 1,
+        name: "100% Nylon Yarn",
+    },
+    { id: 2, name: "Recycled Nylon Yarn" },
+    { id: 3, name: "China  Feather Yarn" },
+];
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,9 +17,9 @@ export default function Navbar() {
     const pathname = usePathname()
     const navLinks = [
         { href: "/", label: "HOME" },
-        { href: "/", label: "PRODUCT" },
-        { href: "/process", label: "OUR PROCESS" },
-        { href: "/blog", label: "BLOG" },
+        { href: "/product", label: "PRODUCT" },
+        { href: "/process", label: "PROCESS" },
+        // { href: "/blog", label: "BLOG" },
         { href: "/about", label: "ABOUT" },
         { href: "/contact", label: "CONTACT" },
     ];
@@ -31,7 +38,7 @@ export default function Navbar() {
             className={`z-50 top-0  left-0 w-full transition-all duration-300 border-t-0 ${scrolled ? 'fixed bg-white shadow ' : 'absolute bg-transparent  text-white'
                 }`}
         >
-            <div className="container px-6 py-7 mx-auto md:flex md:justify-between md:items-center">
+            <div className="container px-6 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <Link href="/">
                         <h1 className={`text-2xl font-semibold ${pathname !== '/' && 'text-black'}`}>HUN HSIN TEXTILE</h1>
@@ -78,7 +85,7 @@ export default function Navbar() {
                         }`}
                 >
                     <div className="flex flex-col md:flex-row md:mx-6">
-                        {navLinks.map((link) => (
+                        {/* {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
@@ -90,11 +97,52 @@ export default function Navbar() {
                             </Link>
 
 
+                        ))} */}
+                        {navLinks.map((link) => (
+                            <div
+                                className={`lg:px-2 group cursor-pointer  lg:py-7 `}
+                                key={link.href}
+                            >
+                                <Link
+                                    href={link.href}
+                                    className={`my-2   ${scrolled || pathname !== "/"
+                                        ? "text-black group-hover:text-blue-600   "
+                                        : "text-white group-hover:text-orange-500 "
+                                        } ${isOpen && "text-black"}    dark:hover:text-orange-700 md:mx-4 md:my-0  ${pathname === link.href && "underline underline-offset-[6px]"
+                                        }`}
+                                >
+                                    {link.label}
+                                </Link>
+                                <div
+                                    className={`absolute border  hidden  top-16 lg:top-20 left-[135px] w-[175px] bg-gray-50 text-black/75 shadow-lg ${link.label === "PRODUCT" && "group-hover:flex"
+                                        }`}
+                                >
+                                    <div className="flex flex-col  w-full">
+                                        {caps.map((cap) => (
+                                            <div key={cap.id} className=" relative group/item">
+                                                <Link
+                                                    href={`${`/product/${cap.name}`
+                                                        }`}
+                                                    className="py-2.5  group
+                                              px-2 text-base flex items-center justify-between gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  
+                                            "
+                                                >
+                                                    {cap.name}
+
+                                                </Link>
+
+
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                            </div>
                         ))}
 
                     </div>
 
-                    <div className="flex justify-center md:block mt-4 md:mt-0">
+                    {/* <div className="flex justify-center md:block mt-4 md:mt-0">
                         <Link href="#" className="relative text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300">
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -107,7 +155,7 @@ export default function Navbar() {
                             </svg>
                             <span className="absolute top-0 left-0 p-1 text-xs text-white bg-blue-500 rounded-full"></span>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>

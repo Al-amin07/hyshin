@@ -17,7 +17,7 @@ const products = [
         name: "Classic Snapback",
         image: img1,
         description: "Timeless style, perfect fit.",
-        
+
     },
     {
         id: 2,
@@ -63,7 +63,7 @@ import {
     Autoplay,
 } from "swiper/modules";
 
-import Link from 'next/link'
+// import Link from 'next/link'
 import { MdArrowRightAlt } from 'react-icons/md'
 // import { FaChevronRight } from "react-icons/fa6";
 
@@ -77,19 +77,19 @@ export default function ProductSection() {
 
                     {/* Vertical Text on the Left */}
                     <div className="hidden  min-h-full py-16 lg:flex flex-col gap-5 min-w-[400px] justify-center items-center">
-                        
+
                         <div className='flex gap-1'>
                             <h2
-                            className={`text-5xl  rotate-180 font-bold text-black/80  `}
-                            style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}
-                        >
+                                className={`text-5xl  rotate-180 font-bold text-black/80  `}
+                                style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}
+                            >
 
 
-                            Product Category
-                        </h2>
-                        <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 h-28 w-5 bg-blue-600'></span>
+                                Product Category
+                            </h2>
+                            <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 h-28 w-5 bg-blue-600'></span>
                         </div>
-                        <div className='max-w-[300px]  space-x-3 mx-auto'>
+                        {/* <div className='max-w-[300px]  space-x-3 mx-auto'>
                             <Link className='hover:underline text-lg hover:text-blue-600'  href={`/product`}>
                         All
                             </Link> 
@@ -98,7 +98,7 @@ export default function ProductSection() {
                             {el.name}
                             </Link>)
                             }
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Swiper Carousel */}
@@ -136,26 +136,26 @@ export default function ProductSection() {
                             {products.map((el, index) => (
                                 <SwiperSlide
                                     key={index}
-                                    
+
                                 >
                                     <div className="select-none group hover:scale-110 relative min-h-[500px]   cursor-pointer  transition-all duration-500 overflow-hidden">
                                         <Image
-                                        src={el.image}
-                                        alt={el.name}
-                                        height={500}
-                                        width={500}
-                                        className="min-h-[500px] w-full object-cover"
-                                    />
-                                    <div className=" group-hover:-translate-y-24 transition-transform duration-500 text-white w-full absolute z-10 left-1/2 -translate-x-1/2  bottom-0">
-                                      
+                                            src={el.image}
+                                            alt={el.name}
+                                            height={500}
+                                            width={500}
+                                            className="min-h-[500px] w-full object-cover"
+                                        />
+                                        <div className=" group-hover:-translate-y-24 transition-transform duration-500 text-white w-full absolute z-10 left-1/2 -translate-x-1/2  bottom-0">
 
-                                        <h3 className="text-2xl mb-4 text-center whitespace-nowrap font-semibold ">{el?.name}</h3>
-                                         <button className=" mx-auto cursor-pointer p-2 border border-white   rounded-full opacity-0 group-hover:opacity-100
+
+                                            <h3 className="text-2xl mb-4 text-center whitespace-nowrap font-semibold ">{el?.name}</h3>
+                                            <button className=" mx-auto cursor-pointer p-2 border border-white   rounded-full opacity-0 group-hover:opacity-100
                                          flex items-center justify-center bg-transparent text-white transition-all duration-300 font-bold shadow-xl">
-                                                      <MdArrowRightAlt size={26} />
-                                                        </button>
-                                    </div>
-                                    <div className="absolute group-hover:opacity-0 transition-all duration-500 opacity-100 bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-600 to-transparent"></div>
+                                                <MdArrowRightAlt size={26} />
+                                            </button>
+                                        </div>
+                                        <div className="absolute group-hover:opacity-0 transition-all duration-500 opacity-100 bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-red-600 to-transparent"></div>
                                     </div>
                                 </SwiperSlide>
                             ))}

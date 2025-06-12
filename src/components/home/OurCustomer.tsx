@@ -33,7 +33,7 @@ export default function OurCustomer() {
             <div className='mb-16 '>
                 <h2 className="text-3xl text-center md:text-5xl font-bold text-gray-800 mb-4">Our Valued Customers
                 </h2>
-                <span className='w-48 h-[3px] bg-blue-600 block mx-auto'></span>
+                <span className='w-48 h-[3px] bg-[#172E4D] block mx-auto'></span>
             </div>
             <Swiper
                 slidesPerView={5}
