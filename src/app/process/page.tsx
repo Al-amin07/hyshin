@@ -8,10 +8,12 @@ import Image from 'next/image'
 export default function OurProcessPage() {
     return (
         <section className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 py-28">
-                <h2 className="text-4xl font-bold text-gray-700 text-center">Our Textile Manufacturing Process</h2>
-                <p className="mt-4 text-lg text-gray-600 text-center">
-                    Crafting quality textiles through precision, care, and innovation.
+            <div className="max-w-7xl mx-auto px-6 mt-28 mb-16">
+                <h2 className="text-4xl font-bold text-gray-700 text-center">Precision-Made Nylon Yarn, Engineered for Excellence
+                </h2>
+                <p className="mt-4 px-6 text-lg text-gray-600 text-center">
+                    We follow a globally aligned, high-performance nylon yarn manufacturing process from polymer sourcing to precision winding. Every step is designed to deliver consistent quality, eco-conscious production, and unmatched versatility for retail apparel and industrial textile applications. Discover how we turn premium polymers into world-class nylon yarns.
+
                 </p>
             </div>
 
