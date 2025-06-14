@@ -4,7 +4,8 @@ import Link from "next/link";
 import img1 from '@/assets/nylon/one.webp'
 import img2 from '@/assets/nylon/two.webp'
 import img3 from '@/assets/nylon/33.jpg'
-import img4 from '@/assets/nylon/11.webp'
+import bglogo from '@/assets/nylon/33.jpg'
+// import img3 from '@/assets/nylon/11.webp'
 type Product = {
   id: number;
   title: string;
@@ -53,7 +54,7 @@ export default function AllProductsPage() {
       {/* Hero Banner */}
       <section className="relative w-full h-[350px] md:h-[400px] bg-white">
         <Image
-          src={img4}
+          src={bglogo}
           alt="Yarn Banner"
           layout="fill"
           objectFit="cover"
@@ -62,12 +63,10 @@ export default function AllProductsPage() {
         />
 
         <div className="absolute inset-0 bg-black/5 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-2xl font-semibold md:text-3xl  text-red-600">
+          <h1 className="text-2xl font-semibold md:text-3xl  text-black/90">
             Nylon Yarn Solutions for Global Knitwear & Sweater Manufacturers
           </h1>
-          <p className="text-sm mt-4 text-white font-semibold">
-            Home <span className="mx-1">/</span> Products
-          </p>
+
         </div>
       </section>
 
