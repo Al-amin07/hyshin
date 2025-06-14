@@ -32,7 +32,29 @@ const faqData = [
         answer:
             "We make it easy. Reach out via our website or email with your requirements. Our team will provide samples, technical datasheets, pricing, and shipping details. We handle everything from product customization to export documentation with full transparency.",
     },
+    {
+        question: "Are you a direct manufacturer or a trading company?",
+        answer:
+            "We are a direct manufacturer, not a trading company. All production is handled in-house, ensuring consistent quality, competitive pricing, and reliable delivery. ",
+    },
+    {
+        question: "What is the production capacity of your company ?",
+        answer:
+            "Our annual production capacity is around 300,000 tons of nylon yarn, supported by advanced machinery and efficient operations to meet large and custom orders.",
+    },
+    {
+        question: "What are your payment terms ?",
+        answer:
+            "   We accept L / C, T / T, D / P, and D / A.For long - term clients, we also offer extended L / C terms of 90 to 120 days, based on agreement.",
+    },
+
 ]
+
+
+
+
+
+
 
 export default function FaqSection() {
     return (

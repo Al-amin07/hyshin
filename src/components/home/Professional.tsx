@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 export default function ProfessionalSection() {
   const lists = [
-    { text: 'Capacity', number: 5000 },
-    { text: 'New products per month', number: 1000 },
-    { text: 'Annual number of export containers', number: 300000 },
+    { text: 'Dyeing Vessels ', number: 20 },
+    { text: 'Happy Clients', number: '160+' },
+    { text: 'Annual Sales ', number: "$20M" },
   ]
   return (
     <section className="container mx-auto relative bg-white py-10">
@@ -49,8 +49,8 @@ export default function ProfessionalSection() {
       <div className="mt-10 hidden md:block absolute right-0 -bottom-10 z-10  max-w-6xl bg-gray-600/90 text-white ">
         <div className="flex flex-col  md:flex-row justify-between text-center">
           {
-            lists.map(el => <div key={el.number} className="flex-1 py-12 px-8 border-r border-r-gray-500/60 flex gap-8 items-center justify-between mb-4 md:mb-0">
-              <p className="text-gray-200 text-lg">{el.text}</p>
+            lists.map(el => <div key={el.number} className="flex-1 py-12 px-8 border-r border-r-gray-500/60 flex gap-10 items-center justify-between mb-4 md:mb-0">
+              <p className="text-gray-200 whitespace-nowrap text-lg">{el.text}</p>
               <p className="font-bold text-2xl md:text-3xl lg:text-4xl">{el.number}</p>
             </div>)
           }

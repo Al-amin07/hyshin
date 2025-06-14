@@ -27,7 +27,7 @@ export default function OurGoals() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto ">
         {goals.map((goal, index) => (
           <div key={index} className="flex items-center space-x-3 text-left text-gray-800">
-            <span className="text-red-600 text-2xl">{goal.icon}</span>
+            <span className="text-[#172E4D] text-2xl">{goal.icon}</span>
             <span className="font-medium text-[17px]">{goal.text}</span>
           </div>
         ))}
