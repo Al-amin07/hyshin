@@ -11,7 +11,7 @@ import ProfessionalSection from "@/components/home/Professional";
 
 export default function Home() {
   return (
-    <div className="space-y-32  mx-auto">
+    <div className="space-y-16  mx-auto">
       <Header />
       <AboutSection />
       <ProductSection />
@@ -24,7 +24,6 @@ export default function Home() {
       {/* <CertificationSection /> */}
       {/* <HotNews /> */}
       {/* <CTASection /> */}
-
     </div>
   );
 }

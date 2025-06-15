@@ -2,12 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import bglogo from '@/assets/nylon/33.jpg'
+import bglogo from "@/assets/nylon/33.jpg";
 import { products } from "@/constant/data";
 // import img3 from '@/assets/nylon/11.webp'
-
-
-
 
 export default function AllProductsPage() {
   return (
@@ -23,11 +20,14 @@ export default function AllProductsPage() {
           className="z-0"
         />
 
-        <div className="absolute inset-0 bg-black/5 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-2xl font-semibold md:text-3xl  text-black/90">
+        <div className="absolute inset-0 bg-black/20 flex flex-col justify-center items-center text-center px-4">
+          <h1
+            className="text-2xl uppercase font-semibold md:text-3xl  text-white
+          
+          "
+          >
             Nylon Yarn Solutions for Global Knitwear & Sweater Manufacturers
           </h1>
-
         </div>
       </section>
 
@@ -37,14 +37,23 @@ export default function AllProductsPage() {
           return (
             <div
               key={product.id}
-              className={`flex group flex-col md:flex-row ${!isImageRight ? "md:flex-row-reverse " : ""
-                } items-center `}
+              className={`flex group flex-col md:flex-row ${
+                !isImageRight ? "md:flex-row-reverse " : ""
+              } items-center `}
             >
               {/* Text Block */}
               <div className="w-[400px]   relative">
-                <div className={`w-lg  md:absolute top-1/2 -translate-y-1/2 bg-[#EB1111] group-hover:bg-black/95 transition-all duration-500   text-white p-8 ${isImageRight ? "md:left-0" : "md:right-0"} rounded shadow-md`}>
-                  <h2 className="text-2xl font-semibold mb-3">{product.title}</h2>
-                  <p className="mb-4 text-base font-medium leading-relaxed">{product.short}</p>
+                <div
+                  className={`w-lg  md:absolute top-1/2 -translate-y-1/2 bg-[#EB1111] group-hover:bg-[#172E4D] transition-all duration-500   text-white p-8 ${
+                    isImageRight ? "md:left-0" : "md:right-0"
+                  } rounded shadow-md`}
+                >
+                  <h2 className="text-2xl font-semibold mb-3">
+                    {product.title}
+                  </h2>
+                  <p className="mb-4 text-base font-medium leading-relaxed">
+                    {product.short}
+                  </p>
                   <p className="text-gray-200">{product.desc1}</p>
                   <p className="mt-4 text-gray-200">{product.desc2}</p>
                   <Link href={product.link}>
@@ -54,7 +63,6 @@ export default function AllProductsPage() {
                   </Link>
                 </div>
               </div>
-
 
               {/* Image */}
               <div className="flex-1">
