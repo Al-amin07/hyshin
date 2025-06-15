@@ -122,7 +122,7 @@ export default function Navbar() {
                                         {caps.map((cap) => (
                                             <div key={cap.id} className=" relative group/item">
                                                 <Link
-                                                    href={`${`/${cap.href}`
+                                                    href={`${`/product/${cap.id}`
                                                         }`}
                                                     className="py-2.5  group
                                               px-2 text-base flex items-center justify-between gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  

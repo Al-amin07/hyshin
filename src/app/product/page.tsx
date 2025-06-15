@@ -1,52 +1,13 @@
 // app/products/page.tsx
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import img1 from '@/assets/nylon/one.webp'
-import img2 from '@/assets/nylon/two.webp'
-import img3 from '@/assets/nylon/33.jpg'
+
 import bglogo from '@/assets/nylon/33.jpg'
+import { products } from "@/constant/data";
 // import img3 from '@/assets/nylon/11.webp'
-type Product = {
-  id: number;
-  title: string;
-  short: string;
-  desc1: string;
-  desc2: string;
 
-  image: string | StaticImageData;
-  link: string;
-};
 
-const products: Product[] = [
-  {
-    id: 1,
-    title: "100% Nylon Yarn",
-    short: 'Virgin Strength. Sweater-Ready Softness.',
-    desc1: '100% Nylon Yarn is the foundation of premium sweater knitting. Crafted from virgin nylon, it provides a soft hand feel, reliable elasticity, and strong color absorption making it ideal for solid-colored, textured, or blended sweaters.',
-    desc2: "Known for its high durability and abrasion resistance, this yarn ensures long-lasting wear and perfect form retention. Whether for fine gauge or chunky knits, it's trusted by global sweater brands seeking consistency, comfort, and scalable supply.",
-    image: img1,
-    link: "/nylon-yarn",
-  },
-  {
-    id: 2,
-    title: "Recycled Nylon Yarn",
-    short: 'Circular Innovation for Sweater Fashion.',
-    desc1: 'Recycled Nylon Yarn is designed for sweater manufacturers who want to embrace sustainability without sacrificing quality. Produced from regenerated materials such as post-industrial waste and recovered fishing nets, this yarn combines environmental responsibility with sweater-friendly performance.',
-    desc2: "Engineered for softness, warmth, and stretch, it blends seamlessly into modern knitwear from cozy pullovers to fashion-forward layering pieces. Ideal for brands aiming to align with circular fashion trends, our recycled nylon delivers style, comfort, and a cleaner footprint.",
-    image: img2,
-    link: "/nylon-yarn",
-  },
-  {
-    id: 3,
-    title: "China Feather Yarn",
-    short: 'Plush Texture. Perfect for Statement Sweaters.',
-    desc1: 'China Feather Yarn brings volume and tactile richness to fashion sweaters and winter collections. Crafted with synthetic blends and engineered to mimic feather softness, it delivers both structure and softness in each loop.',
-    desc2: "Ideal for cardigans, oversized knits, trims, and cozy layering pieces, this specialty yarn turns everyday sweaters into standout garments. Easy to knit, dye, and style; Feather Yarn by Hun Hsin is where comfort meets runway-ready texture. ",
-    image: img3,
-    link: "/nylon-yarn",
-  },
 
-];
 
 export default function AllProductsPage() {
   return (
