@@ -37,16 +37,14 @@ export default function AllProductsPage() {
           return (
             <div
               key={product.id}
-              className={`flex group flex-col md:flex-row ${
-                !isImageRight ? "md:flex-row-reverse " : ""
-              } items-center `}
+              className={`flex group flex-col md:flex-row ${!isImageRight ? "md:flex-row-reverse " : ""
+                } items-center `}
             >
               {/* Text Block */}
               <div className="w-[400px]   relative">
                 <div
-                  className={`w-lg  md:absolute top-1/2 -translate-y-1/2 bg-[#EB1111] group-hover:bg-[#172E4D] transition-all duration-500   text-white p-8 ${
-                    isImageRight ? "md:left-0" : "md:right-0"
-                  } rounded shadow-md`}
+                  className={`w-lg  md:absolute top-1/2 -translate-y-1/2 bg-[#EB1111] group-hover:bg-[#172E4D] transition-all duration-500   text-white p-8 ${isImageRight ? "md:left-0" : "md:right-0"
+                    } rounded shadow-md`}
                 >
                   <h2 className="text-2xl font-semibold mb-3">
                     {product.title}
@@ -56,7 +54,7 @@ export default function AllProductsPage() {
                   </p>
                   <p className="text-gray-200">{product.desc1}</p>
                   <p className="mt-4 text-gray-200">{product.desc2}</p>
-                  <Link href={product.link}>
+                  <Link href={`/product/${product?.id}`}>
                     <button className="border border-white text-white px-4 py-1.5 text-sm cursor-pointer mt-5 hover:bg-white hover:text-[#8b2c2c] transition">
                       VIEW DETAILED PRODUCTS
                     </button>

@@ -17,10 +17,7 @@ import {
 } from 'swiper/modules';
 import img2 from '@/assets/banner/yarn images, for banner (2).jpg'
 import img1 from '@/assets/banner/yarn images, for banner (3).jpg'
-// import img3 from '@/assets/banner/b7.jpeg'
-// import img2 from '@/assets/banner/banner5.jpg'
-// import img1 from '@/assets/banner/b5.jpg'
-// import img3 from '@/assets/banner/b7.jpeg'
+
 
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Banner from './Banner';

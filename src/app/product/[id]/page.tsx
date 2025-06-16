@@ -17,13 +17,12 @@ export default async function ProductDetails({
   }
 
   return (
-    <div className="bg-white mt-24 min-h-screen">
+    <div className="bg-white mt-20 min-h-screen">
       {/* Header Section */}
       <div className="bg-[#172E4D] py-24 text-white text-center">
         <h1 className="text-4xl font-bold mb-3">{product?.title}</h1>
         <p>
-          Premium-Grade Polyamide Yarn Designed for Strength,
-          Stretch & Versatility
+          {product?.short2}
         </p>
         <p></p>
       </div>
@@ -33,7 +32,7 @@ export default async function ProductDetails({
         {/* Left Text Block */}
         <div className="">
           <p className="text-gray-700 mt-5 mb-4 leading-relaxed">
-            {product?.desc3} {product?.desc4}
+            {product?.desc3}
           </p>
           <h1 className="text-lg font-medium mt-4 mb-2">
             Product Specifications{" "}
