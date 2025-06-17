@@ -28,9 +28,9 @@ export default async function ProductDetails({
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
+      <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row  gap-10 items-center">
         {/* Left Text Block */}
-        <div className="">
+        <div className="flex-1">
           <p className="text-gray-700 mt-5 mb-4 leading-relaxed">
             {product?.desc3}
           </p>
@@ -47,7 +47,7 @@ export default async function ProductDetails({
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center items-center">
+        <div className="flex flex-1 justify-center items-center">
           <Image
             src={product?.image1 as string} // update this path
             alt="Nylon Yarn Factory"
@@ -59,7 +59,7 @@ export default async function ProductDetails({
       </div>
 
       {/* Product Spec + Yarn Image */}
-      <div className="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center gap-10">
+      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
         {/* Yarn Image */}
         <div className="flex flex-1 justify-center items-center">
           <Image
@@ -80,23 +80,24 @@ export default async function ProductDetails({
               <li key={index}>{spec}</li>
             ))}
           </ul>
-          {/* <h3 className="text-md font-bold mt-6 mb-4">Applications:</h3>
+
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-4 py-8">
+        <div className="col-span-1 md:col-span-2">
+          <p className="text-gray-700 mb-4">{product?.desc1}</p>
+          <p className="text-gray-700">{product?.desc2}</p>
+        </div>
+        {/* Application Paragraph */}
+        <div className="max-w-7xl mx-auto  text-gray-700  leading-relaxed">
+          <h3 className="text-md font-bold ">Applications:</h3>
           <ul className="space-y-2 list-disc list-inside text-gray-700">
             {product?.applications?.map((app, index) => (
               <li key={index}>{app}</li>
             ))}
-          </ul> */}
+          </ul>
         </div>
-      </div>
-
-      {/* Application Paragraph */}
-      <div className="max-w-7xl mx-auto px-4 pb-16 text-gray-700  leading-relaxed">
-        <h3 className="text-md font-bold mt-6 mb-4">Applications:</h3>
-        <ul className="space-y-2 list-disc list-inside text-gray-700">
-          {product?.applications?.map((app, index) => (
-            <li key={index}>{app}</li>
-          ))}
-        </ul>
       </div>
     </div>
   );

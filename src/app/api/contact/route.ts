@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail({
       from: email,
-      to: "ukgfashion@gmail.com",
+      to: "alsujon2001@gmail.com",
       replyTo: email,
       subject: "New Contact Form Submission",
       html: `
@@ -42,7 +42,11 @@ export async function POST(req: Request) {
           </tr>
           <tr>
             <td style="font-weight: 600;">Phone:</td>
-            <td>${phone || "N/A"}</td>
+            ${
+              phone
+                ? `<td>${phone}</td>`
+                : `<td style="color: #999;">Not provided</td>`
+            }
           </tr>
         </table>
 
