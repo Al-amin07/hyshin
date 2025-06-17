@@ -30,12 +30,7 @@ const CertificationSection = () => {
       alt: "Sedex logo",
       description: "",
     },
-    // {
-    //     name: "ICS",
-    //     logo: c5,
-    //     alt: "ICS logo",
-    //     description: ""
-    // },
+
   ];
 
   return (
@@ -48,7 +43,7 @@ const CertificationSection = () => {
       </div>
 
       {/* Logos Section */}
-      <div className=" py-12 px-8">
+      <div className=" py-12 px-5 md:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {certifications.map((cert, index) => (
             <div

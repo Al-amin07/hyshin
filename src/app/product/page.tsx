@@ -31,20 +31,20 @@ export default function AllProductsPage() {
         </div>
       </section>
 
-      <div className="space-y-20 max-w-7xl mx-auto mt-16 px-4">
+      <div className="space-y-20  max-w-7xl mx-auto mt-16 px-4">
         {products.map((product, idx) => {
           const isImageRight = idx % 2 === 0;
           return (
             <div
               key={product.id}
-              className={`flex group flex-col md:flex-row ${!isImageRight ? "md:flex-row-reverse " : ""
+              className={`flex group flex-col lg:flex-row ${!isImageRight ? "lg:flex-row-reverse " : ""
                 } items-center `}
             >
               {/* Text Block */}
-              <div className="w-[400px]   relative">
+              <div className="md:w-[400px] relative ">
                 <div
-                  className={`w-lg  md:absolute top-1/2 -translate-y-1/2 bg-[#EB1111] group-hover:bg-[#172E4D] transition-all duration-500   text-white p-8 ${isImageRight ? "md:left-0" : "md:right-0"
-                    } rounded shadow-md`}
+                  className={`w-full md:w-lg  md:absolute md:top-1/2 md:-translate-y-1/2 bg-[#EB1111] group-hover:bg-[#172E4D] transition-all duration-500   text-white p-4 md:p-8 ${isImageRight ? "md:left-0" : "md:right-0"
+                    }  shadow-md`}
                 >
                   <h2 className="text-2xl font-semibold mb-3">
                     {product.title}
@@ -77,7 +77,7 @@ export default function AllProductsPage() {
         })}
       </div>
 
-      <div className="py-20" />
+
     </div>
   );
 }

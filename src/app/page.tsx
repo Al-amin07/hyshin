@@ -11,19 +11,16 @@ import ProfessionalSection from "@/components/home/Professional";
 
 export default function Home() {
   return (
-    <div className="space-y-16  mx-auto">
+    <div className="space-y-8 md:space-y-16  mx-auto">
       <Header />
       <AboutSection />
       <ProductSection />
       <ProfessionalSection />
-      {/* <OurProcess /> */}
-      {/* <IndustriesWeServe /> */}
+
       <AdvantagesSection />
       <OurGoals />
       <OurCustomer />
-      {/* <CertificationSection /> */}
-      {/* <HotNews /> */}
-      {/* <CTASection /> */}
+
     </div>
   );
 }

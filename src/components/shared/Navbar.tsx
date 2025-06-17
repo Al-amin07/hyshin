@@ -36,19 +36,17 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`z-50 top-0  left-0 w-full transition-all duration-300 border-t-0 ${
-        scrolled
-          ? "fixed bg-white shadow-lg "
-          : "absolute bg-transparent  text-white"
-      }`}
+      className={`z-50 top-0 py-4 sm:py-0  left-0 w-full transition-all duration-300 border-t-0 ${scrolled
+        ? "fixed bg-white shadow-lg "
+        : "absolute bg-transparent  text-white"
+        }`}
     >
       <div className="container px-6 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/">
             <h1
-              className={`text-2xl font-semibold ${
-                pathname !== "/" && "text-black"
-              }`}
+              className={`text-2xl font-semibold ${pathname !== "/" && "text-black"
+                }`}
             >
               HUN HSIN TEXTILE
             </h1>
@@ -59,7 +57,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+              className="text-gray-500 cursor-pointer dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
               aria-label="Toggle menu"
             >
               {!isOpen ? (
@@ -99,11 +97,10 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white  md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
-            isOpen
-              ? "translate-x-0 opacity-100"
-              : "opacity-0 -translate-x-full md:opacity-100 md:translate-x-0"
-          }`}
+          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white  md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen
+            ? "translate-x-0 opacity-100"
+            : "opacity-0 -translate-x-full md:opacity-100 md:translate-x-0"
+            }`}
         >
           <div className="flex flex-col md:flex-row md:mx-6">
             {/* {navLinks.map((link) => (
@@ -126,22 +123,18 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`my-2   ${
-                    scrolled || pathname !== "/"
-                      ? "text-black group-hover:text-blue-600   "
-                      : "text-white group-hover:text-orange-500 "
-                  } ${
-                    isOpen && "text-black"
-                  }    dark:hover:text-orange-700 md:mx-4 md:my-0  ${
-                    pathname === link.href && "underline underline-offset-[6px]"
-                  }`}
+                  className={`my-2   ${scrolled || pathname !== "/"
+                    ? "text-black group-hover:text-blue-600   "
+                    : "text-white group-hover:text-orange-500 "
+                    } ${isOpen && "text-black"
+                    }    dark:hover:text-orange-700 md:mx-4 md:my-0  ${pathname === link.href && "underline underline-offset-[6px]"
+                    }`}
                 >
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute border  hidden  top-16 lg:top-20 left-[135px] w-[175px] bg-gray-50 text-black/75 shadow-lg ${
-                    link.label === "PRODUCT" && "group-hover:flex"
-                  }`}
+                  className={`absolute border  hidden  top-16 lg:top-20 left-[135px] w-[175px] bg-gray-50 text-black/75 shadow-lg ${link.label === "PRODUCT" && "group-hover:flex"
+                    }`}
                 >
                   <div className="flex flex-col  w-full">
                     {caps.map((cap) => (

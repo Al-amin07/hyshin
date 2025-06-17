@@ -27,7 +27,7 @@ export default function AboutUs() {
           <p className="text-sm text-gray-300">Home / About Us</p>
         </div>
       </div>
-      <div className="md:px-12 space-y-20">
+      <div className="px-5 md:px-12 space-y-20">
         {/* Block 1 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>

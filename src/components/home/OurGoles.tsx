@@ -24,13 +24,13 @@ const goals = [
 
 export default function OurGoals() {
   return (
-    <section className=" max-w-6xl mx-auto  bg-white ">
-      <div className="mb-16">
+    <section className=" max-w-6xl mx-auto px-5 md:px-0  bg-white ">
+      <div className="mb-8">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
           Our Goals
         </h2>
       </div>
-      <p className="text-lg font-medium  text-gray-600 mb-10">
+      <p className="text-lg font-medium  text-gray-600 mb-12">
         Hun Hsin Textile Co., (BD) Ltd. stands as a trusted nylon yarn supplier,
         committed to quality, customization, and global service excellence.{" "}
       </p>

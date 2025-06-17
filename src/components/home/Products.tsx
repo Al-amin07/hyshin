@@ -78,7 +78,7 @@ export default function ProductSection() {
                 },
               }}
               modules={[Navigation, HashNavigation, Autoplay]}
-              className="mySwiper max-w-[350px] sm:max-w-[450px] md:max-w-2/3 lg:max-w-4xl min-h-[500px]"
+              className="mySwiper  max-w-[400px] sm:max-w-[450px] md:max-w-2/3 lg:max-w-4xl min-h-[500px]"
             >
               {products.map((el, index) => (
                 <SwiperSlide key={index}>

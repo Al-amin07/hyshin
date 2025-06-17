@@ -8,8 +8,8 @@ import Image from "next/image";
 export default function OurProcessPage() {
   return (
     <section className="bg-white">
-      <div className="max-w-6xl text-right mx-auto  mt-28 mb-16">
-        <h2 className="text-4xl font-bold text-gray-700 ">
+      <div className="max-w-6xl text-right px-5 mx-auto  mt-24 mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-700 ">
           Precision-Made Nylon Yarn, Engineered for Excellence
         </h2>
         <p className="mt-4  text-lg text-gray-600 ">

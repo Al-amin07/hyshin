@@ -22,40 +22,7 @@ const details = [
   },
 ];
 export default function Contact() {
-  // const addressData = [
-  //     {
-  //         title: "Head Office",
-  //         lines: [
-  //             "60/6B, 60 Green Rd, Panthapath,",
-  //             "Dhaka-1205, Bangladesh",
-  //             "Phone: +880 1712345678",
-  //         ],
-  //     },
-  //     {
-  //         title: "Corporate Office",
-  //         lines: [
-  //             "House # 78, Road # 11, Block # F, Banani, ",
-  //             "Dhaka – 1213, Bangladesh",
-  //             "Phone: +880 1712345678",
-  //         ],
-  //     },
-  //     {
-  //         title: "Factory Address 01",
-  //         lines: [
-  //             "KuniaTargach, Hotapara, Gazipur",
-  //             "Bangladesh",
-  //             "Phone: +880 1712345678",
-  //             "Phone: +880 1712345678",
-  //         ],
-  //     },
-  //     {
-  //         title: "Factory Address 02",
-  //         lines: [
-  //             "Jamirdia, Masterbari, Valuka, ",
-  //             "Mymensingh, Bangladesh",
-  //         ],
-  //     },
-  // ];
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const toastId = toast.loading("Submitting your message...");
@@ -86,11 +53,11 @@ export default function Contact() {
     }
   };
   return (
-    <div className="font-sans mt-24">
+    <div className="font-sans mt-20">
       {/* Header Section */}
       <section className="flex flex-col md:flex-row items-center justify-between bg-[#F0F0F0] py-20 px-28">
         <div className=" min-w-lg relative">
-          <div className="bg-[#0A2540]  absolute -right-40 z-10 top-1/2 -translate-y-1/2 opacity-90  md:min-h-[350px] text-white p-12 w-full md:w-1/2 text-center md:text-left min-w-xl">
+          <div className="bg-[#0A2540]  absolute lg:-right-40 z-10 top-1/2 -translate-y-1/2 opacity-90  md:min-h-[350px] text-white p-12 w-full md:w-1/2 text-center md:text-left min-w-xl">
             <div className="  mb-6">
               <span className="w-20 h-[1px] bg-white block mb-1"></span>
               <h1 className="text-3xl md:text-5xl font-medium text-left">
@@ -104,7 +71,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="max-w-5xl my-16  md:my-24 mx-auto ">
+      <section className="max-w-5xl px-5 my-16  md:my-24 mx-auto ">
         {/* Service Cards */}
         <section className=" max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-medium text-left  mb-6">

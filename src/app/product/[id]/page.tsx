@@ -28,7 +28,7 @@ export default async function ProductDetails({
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row  gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-5 md:py-12 flex flex-col md:flex-row gap-6  md:gap-10 items-center">
         {/* Left Text Block */}
         <div className="flex-1">
           <p className="text-gray-700 mt-5 mb-4 leading-relaxed">
@@ -84,13 +84,13 @@ export default async function ProductDetails({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-6   md:gap-10 max-w-7xl mx-auto px-4 md:py-8">
         <div className="col-span-1 md:col-span-2">
           <p className="text-gray-700 mb-4">{product?.desc1}</p>
           <p className="text-gray-700">{product?.desc2}</p>
         </div>
         {/* Application Paragraph */}
-        <div className="max-w-7xl mx-auto  text-gray-700  leading-relaxed">
+        <div className="  text-gray-700  leading-relaxed">
           <h3 className="text-md font-bold ">Applications:</h3>
           <ul className="space-y-2 list-disc list-inside text-gray-700">
             {product?.applications?.map((app, index) => (
