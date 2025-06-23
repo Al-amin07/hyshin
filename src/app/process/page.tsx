@@ -5,6 +5,21 @@ import img3 from "@/assets/process/p3.jpeg";
 import img4 from "@/assets/process/p4.jpeg";
 import img5 from "@/assets/process/p5.webp";
 import Image from "next/image";
+export const metadata = {
+  title: 'Our Production Process | Hun Hsin Textile',
+  description:
+    "Explore Hun Hsin Textile's sustainable and quality- driven production process for 100 % Nylon Yarn, Recycled Nylon Yarn, and China Feather Yarn.",
+  keywords: [
+    'Nylon Yarn Production Process',
+    'Sustainable Yarn Manufacturing',
+    'Recycled Nylon Yarn Process',
+    'Feather Yarn Production',
+    'Textile Yarn Quality Control',
+  ],
+
+  authors: [{ name: 'Hun Hsin Textile' }],
+};
+
 export default function OurProcessPage() {
   return (
     <section className="bg-white">

@@ -1,7 +1,28 @@
 import { products } from "@/constant/data";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  const id = Number(params?.id);
+  const product = products.find(el => el.id === id);
+  if (!product) {
+    return {
+      title: 'Product Not Found',
+      description: 'This product could not be found in our catalog.',
+    };
+  }
 
+  return {
+    title: `${product.title} | Hun Hsin Textile`,
+    description: product.desc1,
+
+
+  };
+}
 export default async function ProductDetails({
   params,
 }: {

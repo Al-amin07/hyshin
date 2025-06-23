@@ -64,9 +64,9 @@ export default function FaqSection() {
         {/* Left section */}
         <div className="max-w-1/3">
           {/* <p className="text-yellow-400 text-2xl font-semibold mb-2">FAQ</p> */}
-          <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight">
+          <h2 className="text-3xl lg:text-6xl font-extrabold leading-tight">
             ASK US
-            <br />
+            <br className="" />
             ANYTHING
           </h2>
         </div>

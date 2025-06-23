@@ -55,9 +55,9 @@ export default function Contact() {
   return (
     <div className="font-sans mt-20">
       {/* Header Section */}
-      <section className="flex flex-col md:flex-row items-center justify-between bg-[#F0F0F0] py-20 px-28">
+      <section className="flex flex-col md:flex-row items-center justify-between bg-[#F0F0F0] py-20 pb-5 lg:pb-20 px-5 md:px-12 lg:px-28">
         <div className=" min-w-lg relative">
-          <div className="bg-[#0A2540]  absolute lg:-right-40 z-10 top-1/2 -translate-y-1/2 opacity-90  md:min-h-[350px] text-white p-12 w-full md:w-1/2 text-center md:text-left min-w-xl">
+          <div className="bg-[#0A2540]  absolute lg:-right-40 z-10 top-1/2 -translate-y-1/2 opacity-90  md:min-h-[350px] text-white p-12 w-full md:w-1/2 text-center md:text-left  md:min-w-xl">
             <div className="  mb-6">
               <span className="w-20 h-[1px] bg-white block mb-1"></span>
               <h1 className="text-3xl md:text-5xl font-medium text-left">
@@ -66,7 +66,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 min-h-[350px] md:min-h-[500px] relative">
+        <div className="w-full mt-24 md:mt-0 border-2  md:w-1/2 min-h-[350px] md:min-h-[500px] relative">
           <Image src={img} alt="Office" fill className="object-cover" />
         </div>
       </section>

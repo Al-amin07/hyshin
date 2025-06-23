@@ -4,6 +4,21 @@ import Image from "next/image";
 import bg1 from "@/assets/about/t1.jpeg";
 import CertificationSection from "@/components/home/Certificate";
 import IndustriesWeServe from "@/components/home/IndustriesWeServe";
+export const metadata = {
+  title: 'About Us | Hun Hsin Textile',
+  description:
+    'Learn about Hun Hsin Textile, our mission to provide premium 100% Nylon Yarn, Recycled Nylon Yarn, and China Feather Yarn with sustainable textile solutions.',
+  keywords: [
+    'About Hun Hsin Textile',
+    'Textile Yarn Manufacturer',
+    'Sustainable Yarn Supplier',
+    'Nylon Yarn Company History',
+    'Eco-friendly Yarn Producer',
+  ],
+
+  authors: [{ name: 'Hun Hsin Textile' }],
+};
+
 export default function AboutUs() {
   return (
     <section className="my-24  font-sans space-y-20">
