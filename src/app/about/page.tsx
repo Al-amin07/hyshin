@@ -34,7 +34,7 @@ export default function AboutUs() {
           </h1>
           <div className="w-16 h-[2px] bg-white mb-6" />
           <p className="text-xl md:text-2xl font-light mb-2">
-            Coming From China, Marketing To The World.
+            Coming From Taiwan, Marketing To The World.
           </p>
           <p className="text-xl md:text-2xl font-light mb-6">
             We Are A Professional Manufacturer of 100% Nylon Yarn.
@@ -56,7 +56,7 @@ export default function AboutUs() {
           </div>
           <div>
             <h2 className="text-xl md:text-[26px] font-semibold text-[#172E4D] mb-5">
-              Coming From China, Marketing To The World.
+              Coming From Taiwan, Marketing To The World.
             </h2>
             <p className="text-gray-800  leading-relaxed">
               Since its establishment in 2008, Hun Hsin Textile Co., (BD) Ltd.

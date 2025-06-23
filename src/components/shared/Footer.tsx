@@ -61,7 +61,7 @@ export default function Footer() {
                 Headquarter
               </h3>
               <p className="text-base leading-relaxed  mb-2">
-                House No. 04, Road No. 12, <br /> Sector 04, Uttara Model Town,{" "}
+                House No. 04 (5th Floor), Road No. 12, <br /> Sector 04, Uttara Model Town,{" "}
                 <br /> Dhaka, Bangladesh.
               </p>
               <p className="text-base mb-2">+880 1911-247183 </p>

@@ -18,7 +18,7 @@ const details = [
   },
   {
     title: "Corporate Office:",
-    desc: "House No. 04, Road No. 12, Sector 04, Uttara Model Town, Dhaka, Bangladesh. ",
+    desc: "House No. 04 (5th Floor), Road No. 12, Sector 04, Uttara Model Town, Dhaka, Bangladesh. ",
   },
 ];
 export default function Contact() {
