@@ -141,10 +141,13 @@ export default function Footer() {
           </form>
           <div className="mt-4 flex items-center lg:justify-start gap-4 text-white pr-6">
             <span className="font-bold text-2xl">Follow Us : </span>
-            <FaFacebookF className="text-4xl transition-all duration-500 cursor-pointer bg-blue-500  p-1 rounded-full" />
-            {/* <FaTwitter className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' />
-                        <FaInstagram className='text-4xl transition-all duration-500 cursor-pointer hover:bg-white hover:text-black p-1 rounded-full' /> */}
-            <FaLinkedinIn className="text-4xl transition-all duration-500 cursor-pointer bg-[#0A66C2] p-1 rounded-full" />
+            <Link href="https://www.facebook.com/hunhsintextile" target="_blank">
+              <FaFacebookF className="text-4xl transition-all duration-500 cursor-pointer bg-blue-500  p-1 rounded-full" />
+            </Link>
+
+            <Link href="https://www.linkedin.com/company/hunhsintextile/" target="_blank">
+              <FaLinkedinIn className="text-4xl transition-all duration-500 cursor-pointer bg-[#0A66C2] p-1 rounded-full" />
+            </Link>
           </div>
         </div>
       </div>
