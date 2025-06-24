@@ -1,35 +1,36 @@
 import { products } from "@/constant/data";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: { id: string };
-// }): Promise<Metadata> {
-//   const id = Number(params?.id);
-//   const product = products.find(el => el.id === id);
-//   if (!product) {
-//     return {
-//       title: 'Product Not Found',
-//       description: 'This product could not be found in our catalog.',
-//     };
-//   }
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string | number }>;
+}): Promise<Metadata> {
+  const id = (await params).id;
+  const product = products.find(el => el.id === Number(id));
 
-//   return {
-//     title: `${product.title} | Hun Hsin Textile`,
-//     description: product.desc1,
+  if (!product) {
+    return {
+      title: 'Product Not Found | Hun Hsin Textile',
+      description: 'This product could not be found in our catalog.',
+    };
+  }
 
-
-//   };
-// }
+  return {
+    title: `${product.title} | Hun Hsin Textile`,
+    description: [product.desc1, product.desc2, product.desc3]
+      .filter(Boolean)
+      .join(' '),
+  };
+}
 export default async function ProductDetails({
   params,
 }: {
   params: Promise<{ id: string | number }>;
 }) {
   const id = (await params).id;
-  console.log({ id });
+
   const product = products.find((el) => el.id === Number(id));
   if (!product) {
     return (
