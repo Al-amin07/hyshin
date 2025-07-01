@@ -2,7 +2,7 @@
 import { products } from "@/constant/data";
 import Link from "next/link";
 import { useState } from "react";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { toast } from "sonner";
 
 export default function Footer() {
@@ -139,15 +139,12 @@ export default function Footer() {
               </button>
             </div>
           </form>
+
           <div className="mt-4 flex items-center lg:justify-start gap-4 text-white pr-6">
             <span className="font-bold text-2xl">Follow Us : </span>
-            <Link href="https://www.facebook.com/hunhsintextile" target="_blank">
-              <FaFacebookF className="text-4xl transition-all duration-500 cursor-pointer bg-blue-500  p-1 rounded-full" />
-            </Link>
+            <Link href={"https://www.facebook.com/hunhsintextile"} target="_blank" className="p-1 bg-gray-800 border rounded-md hover:bg-white hover:text-black transition-all duration-300"><FaFacebookF size={26} /></Link>
+            <Link href={"https://www.linkedin.com/company/hunhsintextile/"} target="_blank" className="p-1 bg-gray-800 border rounded-md hover:bg-white hover:text-black transition-all duration-300">  <FaLinkedin size={26} /></Link>
 
-            <Link href="https://www.linkedin.com/company/hunhsintextile/" target="_blank">
-              <FaLinkedinIn className="text-4xl transition-all duration-500 cursor-pointer bg-[#0A66C2] p-1 rounded-full" />
-            </Link>
           </div>
         </div>
       </div>
@@ -162,8 +159,7 @@ export default function Footer() {
         </p>
         <div className="text-sm text-gray-200 mt-2 flex flex-col md:flex-row justify-between items-center gap-2">
           <p>
-            © 2008 – 2025 Hun Hsin Textile Co., (BD) Ltd. All rights reserved.
-          </p>
+            © Hun Hsin Textile Co., (BD) Ltd. All Rights Reserved. | Quality from Bangladesh. For the world.          </p>
           <div className="flex space-x-4">
             <Link href="/about">About Us</Link>
             <span>/</span>

@@ -13,7 +13,7 @@ export default function IndustriesWeServe() {
     return (
         <section className="">
             <div className=" text-center">
-                <div className="bg-[#3399CC] py-20 text-center shadow-md">
+                <div className="bg-[#3399CC] py-16 text-center shadow-md">
                     <h2 className="text-5xl font-bold text-white tracking-wide">
                         Markets We Serve
                     </h2>

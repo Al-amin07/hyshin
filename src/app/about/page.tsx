@@ -4,6 +4,7 @@ import Image from "next/image";
 import bg1 from "@/assets/about/t1.jpeg";
 import CertificationSection from "@/components/home/Certificate";
 import IndustriesWeServe from "@/components/home/IndustriesWeServe";
+import Manager from "@/components/about/Manager";
 export const metadata = {
   title: 'About Us | Hun Hsin Textile',
   description:
@@ -111,6 +112,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+      <Manager />
       <CertificationSection />
       <IndustriesWeServe />
     </section>
