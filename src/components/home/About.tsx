@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <section className="bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row  gap-12">
         <div className="md:w-1/2" data-aos="zoom-in">
           <Image
             src={img}

@@ -52,7 +52,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-black/90 text-white  py-8 md:py-16 px-8 md:px-10 lg:px-16">
-      <div className="flex flex-col lg:flex-row justify-between border-b border-gray-700  mb-8">
+      <div className="flex flex-col lg:flex-row justify-between border-b border-gray-300  mb-8">
         <div className="w-full lg:w-2/3 mx-auto pb-10">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-5  ">
             {/* Contact Details */}
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
         {/* Contact Form */}
-        <div className="lg:w-1/3 lg:pl-8 pb-5 lg:border-l border-gray-700 ">
+        <div className="lg:w-1/3 lg:pl-8 pb-5 lg:border-l border-gray-300 ">
           <h2 className="text-2xl uppercase font-bold mb-4 leading-tight">
             Consult Us
           </h2>
@@ -159,8 +159,17 @@ export default function Footer() {
         </p>
         <p>Leading Exporter of Premium Nylon Yarns</p>
         <p>
-          © 2008 – 2025 Hun Hsin Textile Co., (BD) Ltd. All rights reserved.
         </p>
+        <div className="text-sm text-gray-200 mt-2 flex flex-col md:flex-row justify-between items-center gap-2">
+          <p>
+            © 2008 – 2025 Hun Hsin Textile Co., (BD) Ltd. All rights reserved.
+          </p>
+          <div className="flex space-x-4">
+            <Link href="/about">About Us</Link>
+            <span>/</span>
+            <Link href="/contact">Contact Us</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

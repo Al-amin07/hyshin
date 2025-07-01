@@ -4,7 +4,7 @@ export default function IndustriesWeServe() {
         { name: "Retail Apparel & Fashion Industry", icon: "👗" },
         { name: "Hosiery & Innerwear Manufacturing", icon: "🧦" },
         { name: "Knitwear & Sweater Industry", icon: "🧶" },
-        { name: "Home Textiles & Technical Fabrics", icon: "🛋️" },
+        // { name: "Home Textiles & Technical Fabrics", icon: "🛋️" },
         { name: "Global Importers and Sourcing Agencies", icon: "🌍" }
 
 
@@ -12,20 +12,20 @@ export default function IndustriesWeServe() {
 
     return (
         <section className="">
-            <div className="max-w-7xl mx-auto px-5 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Markets We Serve                </h2>
-                <p className="text-gray-600 mb-10">
+            <div className=" text-center">
+                <div className="bg-[#3399CC] py-20 text-center shadow-md">
+                    <h2 className="text-5xl font-bold text-white tracking-wide">
+                        Markets We Serve
+                    </h2>
+                </div>
 
-                    We serve clients who demand performance, consistency, and innovation.
-                </p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                <div className="py-12 px-5 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 ">
                     {industries.map((industry, i) => (
                         <div
                             key={i}
-                            className="bg-white p-6 rounded-xl shadow hover:shadow-xl cursor-pointer transition-all duration-300"
+                            className={`bg-white  p-6 rounded-xl shadow-xl  hover:shadow-2xl cursor-pointer transition-all duration-300 relative `}
                         >
-                            <div className="text-6xl mb-3">{industry.icon}</div>
+                            <div className="text-6xl mb-6">{industry.icon}</div>
                             <h3 className="text-md font-semibold text-gray-700">
                                 {industry.name}
                             </h3>

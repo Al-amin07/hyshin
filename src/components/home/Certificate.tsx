@@ -6,6 +6,7 @@ import c4 from "@/assets/certificate/C4.png";
 import Image from "next/image";
 const CertificationSection = () => {
   const certifications = [
+
     {
       name: "amfori BSCI",
       logo: c1,
@@ -38,13 +39,13 @@ const CertificationSection = () => {
       {/* Header Section */}
       <div className="bg-[#3399CC] py-20 text-center shadow-md">
         <h2 className="text-5xl font-bold text-white tracking-wide">
-          Certification
+          Certifications
         </h2>
       </div>
 
       {/* Logos Section */}
       <div className=" py-12 px-5 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {certifications.map((cert, index) => (
             <div
               key={index}

@@ -65,8 +65,10 @@ export default function Header() {
 
                 </SwiperSlide> */}
 
+                {/* bg-[#3d3d3d] */}
             </Swiper>
-            <div className="h-12  hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
+            <div className="h-12  hidden md:flex  items-center   
+             opacity-60 bg-[#162B48] relative">
                 <div className="custom-swiper-scrollbar w-[40%] h-1  rounded relative overflow-hidden"></div>
             </div>
             <div className="absolute left-1/2 -translate-x-1/2 bottom-3 md:bottom-1.5 z-30 flex items-center  mt-4  gap-3">
