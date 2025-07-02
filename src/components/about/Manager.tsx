@@ -8,7 +8,7 @@ export default function Manager() {
         <div>
             <div className="bg-[#3399CC] mb-16 py-16 text-center shadow-md">
                 <h2 className="text-3xl font-bold text-white tracking-wide">
-                    A Message from Our Managing Director, Sung Wei Lun
+                    A Message from Our Managing Director, A Note from SUNG KUNG TSAO
                 </h2>
             </div>
             <div className='max-w-6xl  mx-auto'>

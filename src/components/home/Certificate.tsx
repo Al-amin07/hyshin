@@ -35,11 +35,11 @@ const CertificationSection = () => {
   ];
 
   return (
-    <section className="w-full  font-inter">
+    <section className="w-full mt-32  font-inter">
       {/* Header Section */}
       <div className="bg-[#3399CC] py-16 text-center shadow-md">
-        <h2 className="text-5xl font-bold text-white tracking-wide">
-          Certifications
+        <h2 className="text-3xl font-bold text-white tracking-wide">
+          Quality Certifications
         </h2>
       </div>
 
