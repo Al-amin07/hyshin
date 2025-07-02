@@ -13,6 +13,7 @@ const geistSans = Geist({
 
 
 import { Toaster } from 'sonner';
+import FloatingChatFAB from "@/components/shared/FloatingButton";
 export const metadata: Metadata = {
   title: {
     default: 'Nylon Yarn Supplier | Premium & Recycled Yarns',
@@ -158,6 +159,7 @@ export default function RootLayout({
           </div>
           <Footer />
           <Toaster position="top-center" richColors />
+          \<FloatingChatFAB />
         </AnimationProvider>
 
       </body>

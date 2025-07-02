@@ -3,7 +3,8 @@ import Image from "next/image";
 // import Image from "next/image";
 import { toast } from "sonner";
 
-import img from "@/assets/contact-2x-635x624.jpg";
+// import img from "@/assets/contact-2x-635x624.jpg";
+import img from "@/assets/contact.jpg";
 import { motion } from "motion/react";
 import FaqSection from "@/components/Faq";
 
